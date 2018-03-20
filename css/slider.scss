@@ -1,0 +1,81 @@
+
+.slider{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+   ul li{ width: 100%;
+    display: inline-block;
+    transition: all 0.5s;
+  }
+   ul li img{
+    width: 100%;
+  }
+}
+.slider ul{
+  font-size: 0;
+  width: 100%;
+  white-space: nowrap;
+}
+#slide1{
+  position: absolute;
+  bottom: 10%;
+  left: 46%;
+  transform: translateX(-50%);
+}
+#slide2{
+  position: absolute;
+  bottom: 10%;
+  left: 48.5%;
+  transform: translateX(-50%);
+}
+#slide3{
+  position: absolute;
+  bottom: 10%;
+  left: 51%;
+  transform: translateX(-50%);
+}
+#slide4{
+  position: absolute;
+  bottom: 10%;
+  left: 53.5%;
+  transform: translateX(-50%);
+}
+
+
+#slide1:checked ~ ul li:first-of-type{
+  margin-left: 0;
+}
+#slide2:checked ~ ul li:first-of-type{
+  margin-left: -100%;
+}
+#slide3:checked ~ ul li:first-of-type{
+  margin-left:-200%;
+}
+#slide4:checked ~ ul li:first-of-type{
+  margin-left: -300%;
+}
+
+.arrows>label{
+  display: none;
+  position: absolute;
+  top: 48%;
+  cursor: pointer;
+  margin: 0 2%;
+  width: 20px;
+  height: 20px;
+  border-right:#afb0b1 3px solid;
+  border-bottom:#afb0b1 3px solid;
+}
+.arrows>label:hover{
+  border-color: #c7c8c9;
+}
+#slide1:checked ~ .arrows > label:nth-of-type(4), #slide2:checked ~.arrows > label:nth-of-type(1),#slide3:checked ~ .arrows>label:nth-of-type(2),#slide4:checked ~ .arrows>label:nth-of-type(3){
+  display: block;
+  transform: rotate(135deg);
+}
+
+#slide1:checked ~ .arrows > label:nth-of-type(2), #slide2:checked ~.arrows > label:nth-of-type(3),#slide3:checked ~ .arrows>label:nth-of-type(4),#slide4:checked ~ .arrows>label:nth-of-type(1){
+  display: block;
+  transform: rotate(-45deg);
+  right: 0;
+}

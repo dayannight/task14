@@ -1,0 +1,35 @@
+@media screen and (max-width: 510px) {
+  #nav-btn:checked ~ .nav-btngroup {
+    display: flex; }
+
+  nav {
+    padding: 0;
+    position: relative; }
+    nav > button {
+      display: none; }
+    nav img {
+      display: block;
+      position: absolute;
+      right: 10%;
+      top: 1.5rem;
+      cursor: pointer; }
+    nav .nav-btngroup {
+      display: none;
+      flex-direction: column;
+      position: relative;
+      top: 6rem; }
+      nav .nav-btngroup button {
+        width: 100%; }
+      nav .nav-btngroup button:first-of-type {
+        border-top: white 1px solid; }
+
+  .how img {
+    display: none; }
+
+  .how-blk {
+    width: 100%;
+    margin-right: 0; }
+    .how-blk p {
+      width: 20rem; } }
+
+/*# sourceMappingURL=media.css.map */
