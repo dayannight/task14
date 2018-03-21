@@ -55,11 +55,37 @@ main>h4{
 
 }
 .job-blk{
+  position: relative;
   border: 1px solid #e0e2e4;
   box-shadow: 1px 1px 1px #e0e2e4 ;
   margin: 0 0 2rem 0;
   width: 32rem;
   border-radius: 2px;
+  &:hover .blk-hover{
+    display: block;
+  }
+  .blk-hover{
+    display: none;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 6rem 3rem;
+    p{
+      margin-top: 2rem;
+      font-size: 14px;
+      text-align: left;
+      line-height: 20px;
+      text-indent: 2em;
+      color: white;
+    }
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
   p{
     line-height: 16px;
     margin-top: 1rem;

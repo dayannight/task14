@@ -121,6 +121,10 @@ body {
   height: 3rem;
   color: #1db176;
   font-size: 14px; }
+  .warp span:nth-of-type(3) {
+    display: none; }
+    .warp span:nth-of-type(3) a {
+      color: black; }
 
 nav {
   min-height: 6rem;
@@ -220,23 +224,27 @@ footer {
   position: absolute;
   bottom: 10%;
   left: 46%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  margin: 0 -8px; }
 
 #slide2 {
   position: absolute;
   bottom: 10%;
   left: 48.5%;
+  margin-left: -2px;
   transform: translateX(-50%); }
 
 #slide3 {
   position: absolute;
   bottom: 10%;
   left: 51%;
+  margin-left: 4px;
   transform: translateX(-50%); }
 
 #slide4 {
   position: absolute;
   bottom: 10%;
+  margin-left: 10px;
   left: 53.5%;
   transform: translateX(-50%); }
 
@@ -275,6 +283,9 @@ footer {
   transform: rotate(-45deg);
   right: 0; }
 
+@media all and (max-width: 450px) {
+  .slider input {
+    width: 8px; } }
 .red {
   color: red; }
 
@@ -321,11 +332,33 @@ main > h4 {
   flex-wrap: wrap; }
 
 .job-blk {
+  position: relative;
   border: 1px solid #e0e2e4;
   box-shadow: 1px 1px 1px #e0e2e4;
   margin: 0 0 2rem 0;
   width: 32rem;
   border-radius: 2px; }
+  .job-blk:hover .blk-hover {
+    display: block; }
+  .job-blk .blk-hover {
+    display: none;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 6rem 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+    .job-blk .blk-hover p {
+      margin-top: 2rem;
+      font-size: 14px;
+      text-align: left;
+      line-height: 20px;
+      text-indent: 2em;
+      color: white; }
   .job-blk p {
     line-height: 16px;
     margin-top: 1rem;
@@ -490,7 +523,9 @@ main > h4 {
 
   .warp {
     justify-content: flex-end; }
-    .warp span:nth-of-type(1) {
-      display: none; } }
+    .warp span:nth-of-type(1), .warp span:nth-of-type(2) {
+      display: none; }
+    .warp span:nth-of-type(3) {
+      display: block; } }
 
 /*# sourceMappingURL=job.css.map */

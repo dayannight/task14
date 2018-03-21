@@ -16,27 +16,34 @@
   width: 100%;
   white-space: nowrap;
 }
+
 #slide1{
   position: absolute;
   bottom: 10%;
   left: 46%;
   transform: translateX(-50%);
+  margin: 0 -8px;
 }
 #slide2{
   position: absolute;
   bottom: 10%;
   left: 48.5%;
+  margin-left: -2px;
   transform: translateX(-50%);
 }
 #slide3{
   position: absolute;
   bottom: 10%;
   left: 51%;
+  margin-left: 4px;
+
   transform: translateX(-50%);
 }
 #slide4{
   position: absolute;
   bottom: 10%;
+  margin-left: 10px;
+
   left: 53.5%;
   transform: translateX(-50%);
 }
@@ -78,4 +85,13 @@
   display: block;
   transform: rotate(-45deg);
   right: 0;
+}
+@media all and(max-width: 450px) {
+  .slider{
+    input{
+      width:8px;
+
+    }
+  }
+  
 }
