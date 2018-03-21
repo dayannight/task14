@@ -9,17 +9,26 @@ body{
   padding: 0 10%;
 }
 .warp{
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 3rem;
+  line-height: 3rem;
   color: #1db176;
   font-size: 14px;
-  span:nth-of-type(3){
-    display: none;
+  span:nth-of-type(2){
+    float: right;
+    margin-left: 2rem;
+
     a{
       color: black;
     }
+
+  }
+  span:nth-of-type(3){
+    float: right;
+  }
+  img{
+    position: relative;
+    top: 9px;
   }
 }
 nav{
@@ -40,6 +49,7 @@ nav{
   }
   a{
     @include flex-center;
+    margin-right: -13px;
     height:6rem;
     width: 6rem;
     color: white;
