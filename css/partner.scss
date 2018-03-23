@@ -31,18 +31,24 @@
    margin-right: 2rem;
     h4{
       text-align: center;
-      line-height: 4rem;
+      line-height: 6rem;
       width: 100%;
       border-bottom: 1px solid #e0e2e4;
     }
     width: 15rem;
     border: 1px solid #e0e2e4;
+    ul{
+      padding-top: 1rem;
+    }
     ul li{
       font-size: 12px;
       cursor: pointer;
       margin-left: 45px;
       line-height: 3rem;
       color: #1db176;
+      &:hover{
+        color: #f2a845;
+      }
       &:hover:before{
         content: "";
         display: inline-block;
@@ -91,7 +97,7 @@
 }
 @media all and (max-width: 500px) {
   .partner-content{
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: flex-end;
     .content-left{
       margin-top: 2rem;
