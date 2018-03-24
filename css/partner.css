@@ -198,18 +198,25 @@ footer {
       margin-bottom: 2rem; }
     footer .footer-middle p {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
       width: 100%; }
-    footer .footer-middle span {
-      margin-bottom: 1rem;
-      display: block;
-      width: 8rem;
-      font-size: 12px;
-      cursor: pointer;
-      color: white; }
-      footer .footer-middle span:hover {
-        border-bottom: white 1px solid; }
+      footer .footer-middle p > span {
+        flex-basis: 44%;
+        display: flex;
+        justify-content: space-between; }
+      footer .footer-middle p span span {
+        width: 73px;
+        font-size: 12px;
+        cursor: pointer;
+        color: white;
+        display: block;
+        line-height: 20px;
+        height: 20px;
+        box-sizing: border-box; }
+        footer .footer-middle p span span:hover {
+          border-bottom: 1px solid white; }
   footer .footer-wecheat {
     font-size: 12px; }
     footer .footer-wecheat span {
@@ -319,7 +326,7 @@ footer {
       right: 2px; }
       .how .how-middle img {
         display: block; } }
-@media all and (max-width: 728px) {
+@media all and (max-width: 850px) {
   .fd-h4 {
     width: 100%;
     background-color: #ffffff;
@@ -329,6 +336,7 @@ footer {
     display: flex;
     justify-content: space-around; }
     .friendlink ul li {
+      text-align: left;
       margin-bottom: 2px; }
     .friendlink .friendlink-top {
       display: block; } }
@@ -389,18 +397,19 @@ footer {
     .partner a {
       width: 100%; }
 
+  .warp {
+    justify-content: flex-end; }
+    .warp span:nth-of-type(1), .warp span:nth-of-type(3) {
+      display: none; } }
+@media all and (max-width: 680px) {
   footer {
     flex-direction: column; }
     footer .footer-left {
       margin-right: 0; }
     footer .footer-middle {
-      width: 100%; }
+      width: 70%;
+      min-width: 160px; }
     footer .footer-wecheat {
-      width: 73px; }
-
-  .warp {
-    justify-content: flex-end; }
-    .warp span:nth-of-type(1), .warp span:nth-of-type(3) {
-      display: none; } }
+      width: 73px; } }
 
 /*# sourceMappingURL=partner.css.map */

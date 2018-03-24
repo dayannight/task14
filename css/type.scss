@@ -114,21 +114,29 @@ footer{
     }
     p{
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
       width: 100%;
-    }
-
-    span{
-      margin-bottom: 1rem;
-      display: block;
-      width: 8rem;
-      font-size: 12px;
-      cursor: pointer;
-      color: white;
-      &:hover{
-        border-bottom: white 1px solid;
+      &>span{
+        flex-basis: 44%;
+        display: flex;
+        justify-content: space-between;
       }
+
+      span span{
+        width: 73px;
+          font-size: 12px;
+          cursor: pointer;
+          color: white;
+          display: block;
+        line-height: 20px;
+          height: 20px;
+          box-sizing: border-box;
+        &:hover{
+          border-bottom: 1px solid white;
+        }
+    }
     }
   }
 

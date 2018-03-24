@@ -27,7 +27,7 @@
 }
 }
 
-@media all and (max-width: 728px){
+@media all and (max-width: 850px){
   .fd-h4{
     width: 100%;background-color: #ffffff;
     margin-bottom: 0;
@@ -35,7 +35,9 @@
   .friendlink{
     display: flex;
     justify-content: space-around;
+
     ul li{
+      text-align: left;
       margin-bottom: 2px;
     }
     .friendlink-top{
@@ -126,18 +128,7 @@
     }
     justify-content: center;
   }
-  footer{
-    .footer-left{
-      margin-right: 0;
-    }
-    .footer-middle{
-      width: 100%;
-    }
-    flex-direction: column;
-    .footer-wecheat{
-      width: 73px;
-    }
-  }
+
   .warp{
     span:nth-of-type(1),span:nth-of-type(3){
       display: none;
@@ -145,5 +136,21 @@
 
    justify-content: flex-end;
   }
+
+}
+@media all and (max-width: 680px) {
+footer{
+  .footer-left{
+    margin-right: 0;
+  }
+  .footer-middle{
+    width: 70%;
+    min-width: 160px;
+  }
+  flex-direction: column;
+  .footer-wecheat{
+    width: 73px;
+  }
+}
 
 }

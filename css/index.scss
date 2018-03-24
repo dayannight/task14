@@ -164,11 +164,20 @@ p{
     color: #bfc0c1;
     font-size: 10px;
     display: flex;
+    justify-content: space-around;
     a{
-      width: 10%;
+      font-size: 13px;
+      height: 18px;
+      box-sizing: border-box;
+      text-align: center;
+      border-bottom: white 1px solid;
+      &:hover{
+        border-bottom: #1db176 1px solid;
+      }
     }
     a li{
       list-style: disc inside;
+      box-sizing: border-box;
 
     }
   }
